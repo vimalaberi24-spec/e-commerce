@@ -60,18 +60,9 @@ if (document.getElementById('checkoutForm')) {
   });
 }
 
-// Toast notification
+// Toast notification with animation
 function showToast(message) {
   const toast = document.createElement('div');
   toast.textContent = message;
   toast.style.position = 'fixed';
-  toast.style.bottom = '20px';
-  toast.style.right = '20px';
-  toast.style.background = '#ff9800';
-  toast.style.color = '#fff';
-  toast.style.padding = '10px 20px';
-  toast.style.borderRadius = '8px';
-  toast.style.boxShadow = '0 2px 5px rgba(0,0,0,0.2)';
-  document.body.appendChild(toast);
-  setTimeout(() => toast.remove(), 3000);
-}
+  toast.style.bottom =
