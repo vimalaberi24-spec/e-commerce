@@ -1,94 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ShopEase - Products</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">ShopEase</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="cart.html">Cart</a></li>
-        <li><a href="checkout.html">Checkout</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="products">
-    <h2>All Products</h2>
-    <div class="product-grid">
-      <!-- Electronics -->
-      <div class="product-card">
-        <img src="images/product1.jpg" alt="Headphones">
-        <h3>Wireless Headphones</h3>
-        <p>$99.99</p>
-        <button class="add-to-cart" data-id="1">Add to Cart</button>
-      </div>
-      <div class="product-card">
-        <img src="images/product2.jpg" alt="Smart Watch">
-        <h3>Smart Watch</h3>
-        <p>$149.99</p>
-        <button class="add-to-cart" data-id="2">Add to Cart</button>
-      </div>
-      <div class="product-card">
-        <img src="images/product3.jpg" alt="Laptop">
-        <h3>Gaming Laptop</h3>
-        <p>$999.99</p>
-        <button class="add-to-cart" data-id="3">Add to Cart</button>
-      </div>
-
-      <!-- Fashion -->
-      <div class="product-card">
-        <img src="images/product4.jpg" alt="Sneakers">
-        <h3>Running Sneakers</h3>
-        <p>$79.99</p>
-        <button class="add-to-cart" data-id="4">Add to Cart</button>
-      </div>
-      <div class="product-card">
-        <img src="images/product5.jpg" alt="Jacket">
-        <h3>Leather Jacket</h3>
-        <p>$199.99</p>
-        <button class="add-to-cart" data-id="5">Add to Cart</button>
-      </div>
-
-      <!-- Home -->
-      <div class="product-card">
-        <img src="images/product6.jpg" alt="Coffee Maker">
-        <h3>Coffee Maker</h3>
-        <p>$59.99</p>
-        <button class="add-to-cart" data-id="6">Add to Cart</button>
-      </div>
-      <div class="product-card">
-        <img src="images/product7.jpg" alt="Vacuum Cleaner">
-        <h3>Vacuum Cleaner</h3>
-        <p>$129.99</p>
-        <button class="add-to-cart" data-id="7">Add to Cart</button>
-      </div>
-
-      <!-- Accessories -->
-      <div class="product-card">
-        <img src="images/product8.jpg" alt="Backpack">
-        <h3>Travel Backpack</h3>
-        <p>$49.99</p>
-        <button class="add-to-cart" data-id="8">Add to Cart</button>
-      </div>
-      <div class="product-card">
-        <img src="images/product9.jpg" alt="Sunglasses">
-        <h3>Polarized Sunglasses</h3>
-        <p>$39.99</p>
-        <button class="add-to-cart" data-id="9">Add to Cart</button>
+<section class="products">
+  <h2>Our Products</h2>
+  <div class="product-grid">
+    <!-- Electronics -->
+    <div class="product-card">
+      <div class="product-inner">
+        <div class="product-front">
+          <img src="images/iphone.jpg" alt="iPhone 15 Pro">
+          <h3>iPhone 15 Pro</h3>
+          <p class="price-tag">$1299.99</p>
+        </div>
+        <div class="product-back">
+          <p>Latest Apple flagship with A17 chip.</p>
+          <button class="add-to-cart" data-id="10">Add to Cart</button>
+        </div>
       </div>
     </div>
-  </section>
 
-  <footer>
-    <p>&copy; 2026 ShopEase. All rights reserved.</p>
-  </footer>
-  <script src="script.js"></script>
-</body>
-</html>
+    <div class="product-card">
+      <div class="product-inner">
+        <div class="product-front">
+          <img src="images/samsungtv.jpg" alt="Samsung 4K TV">
+          <h3>Samsung 4K Smart TV</h3>
+          <p class="price-tag">$599.99</p>
+        </div>
+        <div class="product-back">
+          <p>Ultra HD display with smart features.</p>
+          <button class="add-to-cart" data-id="11">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fashion -->
+    <div class="product-card">
+      <div class="product-inner">
+        <div class="product-front">
+          <img src="images/nike.jpg" alt="Nike Sneakers">
+          <h3>Nike Air Sneakers</h3>
+          <p class="price-tag">$89.99</p>
+        </div>
+        <div class="product-back">
+          <p>Comfortable running shoes with style.</p>
+          <button class="add-to-cart" data-id="12">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-inner">
+        <div class="product-front">
+          <img src="images/jacket.jpg" alt="Leather Jacket">
+          <h3>Leather Jacket</h3>
+          <p class="price-tag">$199.99</p>
+        </div>
+        <div class="product-back">
+          <p>Premium leather jacket for winter.</p>
+          <button class="add-to-cart" data-id="5">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Home -->
+    <div class="product-card">
+      <div class="product-inner">
+        <div class="product-front">
+          <img src="images/coffeemaker.jpg" alt="Coffee Maker">
+          <h3>Coffee Maker</h3>
+          <p class="price-tag">$59.99</p>
+        </div>
+        <div class="product-back">
+          <p>Brew fresh coffee in minutes.</p>
+          <button class="add-to-cart" data-id="6">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-inner">
+        <div class="product-front">
+          <img src="images/vacuum.jpg" alt="Vacuum Cleaner">
+          <h3>Vacuum Cleaner</h3>
+          <p class="price-tag">$129.99</p>
+        </div>
+        <div class="product-back">
+          <p>Powerful suction for deep cleaning.</p>
+          <button class="add-to-cart" data-id="7">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Accessories -->
+    <div class="product-card">
+      <div class="product-inner">
+        <div class="product-front">
+          <img src="images/backpack.jpg" alt="Travel Backpack">
+          <h3>Travel Backpack</h3>
+          <p class="price-tag">$49.99</p>
+        </div>
+        <div class="product-back">
+          <p>Durable and spacious for travel.</p>
+          <button class="add-to-cart" data-id="8">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-inner">
+        <div class="product-front">
+          <img src="images/sunglasses.jpg" alt="Sunglasses">
+          <h3>RayBan Sunglasses</h3>
+          <p class="price-tag">$149.99</p>
+        </div>
+        <div class="product-back">
+          <p>Stylish polarized sunglasses.</p>
+          <button class="add-to-cart" data-id="9">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
