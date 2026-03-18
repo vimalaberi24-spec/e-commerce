@@ -4,20 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ShopEase - Checkout</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">ShopEase</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="cart.html">Cart</a></li>
-        <li><a href="checkout.html">Checkout</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav class="navbar">
+    <div class="logo">ShopEase</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="checkout.html">Checkout</a></li>
+    </ul>
+  </nav>
 
   <section class="checkout">
     <h2>Checkout</h2>
@@ -25,8 +23,10 @@
       <input type="text" placeholder="Full Name" required>
       <input type="email" placeholder="Email" required>
       <input type="text" placeholder="Shipping Address" required>
-      <input type="text" placeholder="City" required>
-      <input type="text" placeholder="Postal Code" required>
+      <h3>Select Payment Method:</h3>
+      <label><input type="radio" name="payment" value="Credit Card"> Credit Card</label>
+      <label><input type="radio" name="payment" value="UPI"> UPI</label>
+      <label><input type="radio" name="payment" value="PayPal"> PayPal</label>
       <button type="submit">Place Order</button>
     </form>
     <p id="orderResponse"></p>
@@ -35,6 +35,6 @@
   <footer>
     <p>&copy; 2026 ShopEase. All rights reserved.</p>
   </footer>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
