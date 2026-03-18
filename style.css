@@ -1,0 +1,119 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  padding: 1rem 2rem;
+}
+.navbar .logo { color: #fff; font-size: 1.5rem; font-weight: bold; }
+.nav-links { list-style: none; display: flex; }
+.nav-links li { margin-left: 20px; }
+.nav-links a { color: #fff; text-decoration: none; }
+.nav-links a:hover { color: #00bcd4; }
+
+/* Hero */
+.hero {
+  background: url('images/hero.jpg') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+.hero h1 { font-size: 3rem; }
+.hero .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #00bcd4;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.hero .btn:hover { background: #0097a7; }
+
+/* Products */
+.products, .featured {
+  padding: 50px 20px;
+  text-align: center;
+}
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.product-card {
+  background: #fff;
+  padding: 20px;
+  width: 250px;
+  margin: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.product-card img { width: 100%; border-radius: 5px; }
+.product-card h3 { margin: 10px 0; }
+.product-card button {
+  background: #00bcd4;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.product-card button:hover { background: #0097a7; }
+
+/* Cart */
+.cart {
+  padding: 50px 20px;
+  text-align: center;
+}
+#cartItems div {
+  background: #fff;
+  margin: 10px auto;
+  padding: 10px;
+  width: 60%;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+#cartTotal { font-weight: bold; margin-top: 20px; }
+
+/* Checkout */
+.checkout {
+  padding: 50px 20px;
+  text-align: center;
+}
+.checkout form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+.checkout input {
+  margin: 10px 0;
+  padding: 10px;
+}
+.checkout button {
+  background: #00bcd4;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.checkout button:hover { background: #0097a7; }
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
